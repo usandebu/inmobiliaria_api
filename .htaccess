@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteBase /inmobiliaria_api/
+
+# Redirigir todas las solicitudes a api.php, excepto si es un archivo o directorio existente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ api.php [QSA,L]
