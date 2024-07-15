@@ -3,7 +3,7 @@ class Database {
     private $host = "localhost";
     private $db_name = "inmobiliaria";
     private $username = "root";
-    private $password = "";
+    private $password = $_ENV["DB_PASSWORD"];
     public $conn;
 
     public function getConnection() {
