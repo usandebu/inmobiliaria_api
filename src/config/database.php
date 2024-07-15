@@ -1,7 +1,7 @@
 <?php
 class Database {
-    private $host = $_ENV["localhost"];
-    private $db_name = $_ENV["inmobiliaria"];
+    private $host = $_ENV["host"];
+    private $db_name = $_ENV["db_name"];
     private $username = $_ENV["username"];
     private $password = $_ENV["password"];
     public $conn;
